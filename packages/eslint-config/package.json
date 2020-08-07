@@ -1,25 +1,29 @@
 {
-	"name": "@matejbransky/eslint-config",
-	"version": "1.0.0-alpha.0",
-	"main": "eslint.config.js",
-	"license": "MIT",
+  "name": "@matejbransky/eslint-config",
+  "version": "1.0.0-alpha.0",
+  "main": "react.js",
+  "license": "MIT",
   "peerDependencies": {
     "eslint": ">=6",
     "prettier": ">=2",
     "typescript": ">=3"
   },
   "devDependencies": {
-    "eslint": "^7.3.0",
+    "eslint": "6.x",
     "prettier": "^2.0.5",
     "typescript": "^3.9.5"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.3.0",
-    "@typescript-eslint/parser": "^3.3.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-cypress": "^2.11.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-react-hooks": "^4.0.4"
+    "@typescript-eslint/eslint-plugin": "2.x",
+    "@typescript-eslint/parser": "2.x",
+    "babel-eslint": "10.x",
+    "eslint-config-prettier": "6.x",
+    "eslint-config-react-app": "5.x",
+    "eslint-plugin-flowtype": "4.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-prettier": "3.x",
+    "eslint-plugin-react": "7.x",
+    "eslint-plugin-react-hooks": "2.x"
   }
 }
