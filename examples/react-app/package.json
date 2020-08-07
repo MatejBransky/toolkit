@@ -1,7 +1,7 @@
 {
-  "private": true,
+	"private": true,
 	"name": "react-app",
-	"version": "0.0.0",
+	"version": "0.0.1-alpha.0",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build"
@@ -11,9 +11,9 @@
 		"@pika/react-dom": "^16.13.1"
 	},
 	"devDependencies": {
-		"@matejbransky/eslint-config": "1.0.0-alpha.0",
-		"@matejbransky/prettier-config": "1.0.0-alpha.0",
-		"@matejbransky/typescript-config": "1.0.0-alpha.0",
+		"@matejbransky/eslint-config": "^1.0.0-alpha.1",
+		"@matejbransky/prettier-config": "^1.0.0-alpha.1",
+		"@matejbransky/typescript-config": "^1.0.0-alpha.1",
 		"@types/react": "^16.9.44",
 		"@types/react-dom": "^16.9.8",
 		"eslint": "^7.6.0",
