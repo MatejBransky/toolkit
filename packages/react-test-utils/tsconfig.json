@@ -1,0 +1,6 @@
+{
+  "extends": "@matejbransky/typescript-config",
+  "compilerOptions": {
+    "declaration": false
+  }
+}
