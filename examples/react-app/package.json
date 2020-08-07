@@ -4,7 +4,8 @@
   "version": "0.0.1-alpha.3",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "test": "jest"
   },
   "dependencies": {
     "@pika/react": "^16.13.1",
@@ -25,8 +26,12 @@
     "vite": "^1.0.0-rc.1",
     "vite-plugin-react": "^3.0.0"
   },
-  "prettier": "@matejbransky/prettier-config",
+  "jest": {
+    "preset": "@matejbransky/jest-preset",
+    "testEnvironment": "jsdom"
+  },
   "eslintConfig": {
     "extends": "@matejbransky/eslint-config"
-  }
+  },
+  "prettier": "@matejbransky/prettier-config"
 }

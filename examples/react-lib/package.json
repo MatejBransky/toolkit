@@ -8,6 +8,7 @@
   "author": "Matej Bransky",
   "license": "MIT",
   "scripts": {
+    "test": "jest",
     "build": "microbundle --jsx React.createElement --no-compress -f modern,cjs",
     "format": "prettier --write --ignore-path .gitignore .",
     "lint": "eslint --ignore-path .gitignore .",
@@ -21,6 +22,7 @@
     "@matejbransky/eslint-config": "^1.0.0-alpha.2",
     "@matejbransky/jest-preset": "^1.0.0-alpha.2",
     "@matejbransky/prettier-config": "^1.0.0-alpha.2",
+    "@matejbransky/react-test-utils": "^1.0.0-alpha.3",
     "@matejbransky/typescript-config": "1.0.0-alpha.1",
     "@types/react": "^16.9.44",
     "eslint": "^7.6.0",
@@ -29,8 +31,12 @@
     "prettier": "^2.0.5",
     "typescript": "^3.9.7"
   },
-  "prettier": "@matejbransky/prettier-config",
+  "jest": {
+    "preset": "@matejbransky/jest-preset",
+    "testEnvironment": "jsdom"
+  },
   "eslintConfig": {
     "extends": "@matejbransky/eslint-config"
-  }
+  },
+  "prettier": "@matejbransky/prettier-config"
 }

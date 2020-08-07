@@ -33,8 +33,12 @@
     "react-dom": "^16.13.1",
     "typescript": "^3.9.5"
   },
-  "prettier": "@matejbransky/prettier-config",
+  "jest": {
+    "preset": "@matejbransky/jest-preset",
+    "testEnvironment": "jsdom"
+  },
   "eslintConfig": {
     "extends": "@matejbransky/eslint-config"
-  }
+  },
+  "prettier": "@matejbransky/prettier-config"
 }
