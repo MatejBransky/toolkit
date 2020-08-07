@@ -1,0 +1,12 @@
+{
+  "name": "@matejbransky/prettier-config",
+  "version": "1.0.0-alpha.0",
+  "main": "prettier.json",
+  "license": "MIT",
+  "peerDependencies": {
+    "prettier": ">=2"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
+}

@@ -1,0 +1,63 @@
+{
+	"Import React": {
+		"prefix": "imr",
+		"body": ["import React from 'react';\n"],
+		"description": "Import React"
+	},
+	"Create functional React component": {
+		"prefix": "rfc",
+		"body": [
+			"const ${1:Foobar}: React.FC = (${3:props}) => {",
+			"\treturn ${2:<div {...props\\} />};",
+			"};\n"
+		],
+		"description": "Create functional React component"
+	},
+	"Create functional React component with PropType": {
+		"prefix": "rfcp",
+		"body": [
+			"const ${1:Foobar}: React.FC<$1Props> = (props) => {",
+			"\treturn ${3:<div>Hello {props.message\\}!</div>};",
+			"};\n",
+			"type $1Props = {",
+			"\t${2:message: string;}",
+			"};\n"
+		],
+		"description": "Create functional React component with PropType (with import React)"
+	},
+	"Create functional React component (with import React)": {
+		"prefix": "srfc",
+		"body": [
+			"import React from 'react';\n",
+			"const ${1:Foobar}: React.FC = (${3:props}) => {",
+			"\treturn ${2:<div {...props\\} />};",
+			"};\n",
+			"export { $1 };\n"
+		],
+		"description": "Create functional React component (with import React)"
+	},
+	"Create functional React component with PropType (with import React)": {
+		"prefix": "srfcp",
+		"body": [
+			"import React from 'react';\n",
+			"const ${1:Foobar}: React.FC<$1Props> = (props) => {",
+			"\treturn ${3:<div>Hello {props.message\\}!</div>};",
+			"};\n",
+			"export type $1Props = {",
+			"\t${2:message: string;}",
+			"};\n",
+			"export { $1 };\n"
+		],
+		"description": "Create functional React component with PropType (with import React)"
+	},
+	"Create Page component": {
+		"prefix": "srfp",
+		"body": [
+			"import React from 'react';\n",
+			"const ${1:Foo}Page: React.FC = () => {",
+			"\treturn ${2:<div>Page: $1</div>};",
+			"};\n",
+			"export default $1Page;\n"
+		]
+	}
+}

@@ -1,0 +1,51 @@
+module.exports = {
+  env: {
+    node: true,
+    browser: true,
+    es6: true,
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
+  ],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  plugins: ['react', '@typescript-eslint', 'react-hooks', 'prettier'],
+  rules: {
+    'prefer-const': 'off',
+    'prettier/prettier': 'warn',
+    'no-unused-vars': 'warn',
+    'no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
+    'react/react-in-jsx-scope': 'off',
+    'react/display-name': 'off',
+    'react/prop-types': 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'react/no-unescaped-entities': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/ban-ts-ignore': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/camelcase': 'off',
+    '@typescript-eslint/no-empty-function': 'warn',
+    '@typescript-eslint/no-use-before-define': 'off',
+    '@typescript-eslint/member-delimiter-style': 'warn',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+  },
+  settings: {
+    react: { version: 'latest' },
+  },
+};

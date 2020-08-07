@@ -1,0 +1,16 @@
+{
+	"name": "@matejbransky/typescript-config",
+	"version": "1.0.0-alpha.0",
+	"author": "Matej Bransky",
+	"license": "MIT",
+  "keywords": [
+    "tsconfig",
+    "typescript",
+    "ts",
+    "config",
+    "configuration"
+  ],
+	"files": [
+		"tsconfig.json"
+	]
+}

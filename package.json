@@ -1,0 +1,22 @@
+{
+	"private": true,
+	"name": "presets",
+	"version": "1.0.0",
+	"repository": "git@github.com:MatejBransky/presets.git",
+	"author": "Matej Bransky",
+	"license": "MIT",
+	"workspaces": [
+		"packages/*",
+		"examples/*"
+  ],
+  "scripts": {
+    "build": "lerna run build --no-private",
+    "release": "lerna publish",
+    "format": "lerna run format --parallel",
+    "lint": "lerna run lint",
+    "types": "lerna run types --parallel"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
