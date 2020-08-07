@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/lerna",
+  "packages": ["packages/*"],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "independent",
+  "command": {
+    "publish": {
+      "allowBranch": "master"
+    }
+  }
+}
