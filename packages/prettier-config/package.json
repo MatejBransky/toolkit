@@ -1,6 +1,7 @@
 {
   "name": "@matejbransky/prettier-config",
   "version": "1.0.0-alpha.1",
+  "author": "Matej Bransky",
   "main": "prettier.json",
   "license": "MIT",
   "peerDependencies": {
