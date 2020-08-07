@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@matejbransky/react-lib",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "main": "dist/react-lib.js",
   "module": "dist/react-lib.modern.js",
   "types": "src/index.tsx",
