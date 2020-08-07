@@ -1,6 +1,6 @@
 {
   "name": "@matejbransky/react-lib",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "main": "dist/react-lib.js",
   "module": "dist/react-lib.modern.js",
   "types": "src/index.tsx",
@@ -17,9 +17,9 @@
     "react": ">=16"
   },
   "devDependencies": {
-    "@matejbransky/eslint-config": "1.0.0-alpha.1",
-    "@matejbransky/jest-preset": "1.0.0-alpha.0",
-    "@matejbransky/prettier-config": "1.0.0-alpha.1",
+    "@matejbransky/eslint-config": "^1.0.0-alpha.2",
+    "@matejbransky/jest-preset": "^1.0.0-alpha.1",
+    "@matejbransky/prettier-config": "^1.0.0-alpha.2",
     "@matejbransky/typescript-config": "1.0.0-alpha.1",
     "@types/react": "^16.9.44",
     "eslint": "^7.6.0",

@@ -1,6 +1,6 @@
 {
   "name": "@matejbransky/react-test-utils",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "license": "MIT",
   "author": "Matej Bransky",
   "main": "index.ts",
@@ -19,12 +19,12 @@
     "@testing-library/react": "^10.3.0"
   },
   "devDependencies": {
+    "@matejbransky/eslint-config": "^1.0.0-alpha.2",
+    "@matejbransky/jest-preset": "^1.0.0-alpha.1",
+    "@matejbransky/prettier-config": "^1.0.0-alpha.2",
+    "@matejbransky/typescript-config": "1.0.0-alpha.1",
     "@types/jest": "^26.0.0",
     "@types/react": "^16.9.38",
-    "@matejbransky/eslint-config": "1.0.0-alpha.1",
-    "@matejbransky/jest-preset": "1.0.0-alpha.0",
-    "@matejbransky/prettier-config": "1.0.0-alpha.1",
-    "@matejbransky/typescript-config": "1.0.0-alpha.1",
     "eslint": "^7.2.0",
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
