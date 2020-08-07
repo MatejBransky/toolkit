@@ -1,6 +1,7 @@
 {
   "name": "@matejbransky/eslint-config",
   "version": "1.0.0-alpha.1",
+  "author": "Matej Bransky",
   "main": "react.js",
   "license": "MIT",
   "peerDependencies": {
