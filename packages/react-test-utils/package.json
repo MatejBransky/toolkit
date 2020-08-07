@@ -25,10 +25,12 @@
     "@matejbransky/typescript-config": "1.0.0-alpha.1",
     "@types/jest": "^26.0.0",
     "@types/react": "^16.9.38",
+    "@types/react-dom": "^16.9.8",
     "eslint": "^7.2.0",
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "typescript": "^3.9.5"
   },
   "prettier": "@matejbransky/prettier-config",
