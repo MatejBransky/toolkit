@@ -1,0 +1,14 @@
+{
+  "name": "@matejbransky/jest-preset",
+  "version": "1.0.0-alpha.0",
+  "author": "Matej Bransky",
+  "main": "jest-preset.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "jest": ">=26"
+  },
+  "dependencies": {
+    "jest-transform-stub": "^2.0.0",
+    "ts-jest": "^26.1.4"
+  }
+}
