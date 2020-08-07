@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "@matejbransky/react-lib",
   "version": "1.0.0-alpha.1",
   "main": "dist/react-lib.js",
