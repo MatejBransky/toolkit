@@ -1,0 +1,35 @@
+{
+  "name": "@matejbransky/react-lib",
+  "version": "1.0.0-alpha.0",
+  "main": "dist/react-lib.js",
+  "module": "dist/react-lib.modern.js",
+  "types": "src/index.tsx",
+  "author": "Matej Bransky",
+  "license": "MIT",
+  "scripts": {
+    "build": "microbundle --jsx React.createElement --no-compress -f modern,cjs",
+    "format": "prettier --write --ignore-path .gitignore .",
+    "lint": "eslint --ignore-path .gitignore .",
+    "types": "tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "yarn build"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "devDependencies": {
+    "@matejbransky/eslint-config": "1.0.0-alpha.1",
+    "@matejbransky/jest-preset": "1.0.0-alpha.0",
+    "@matejbransky/prettier-config": "1.0.0-alpha.1",
+    "@matejbransky/typescript-config": "1.0.0-alpha.1",
+    "@types/react": "^16.9.44",
+    "eslint": "^7.6.0",
+    "jest": "^26.2.2",
+    "microbundle": "^0.12.3",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.7"
+  },
+  "prettier": "@matejbransky/prettier-config",
+  "eslintConfig": {
+    "extends": "@matejbransky/eslint-config"
+  }
+}
