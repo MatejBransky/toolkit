@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "test": "jest"
+    "test": "jest",
+    "format": "prettier --write --ignore-path .gitignore .",
+    "lint": "eslint --ignore-path .gitignore .",
+    "types": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
     "@pika/react": "^16.13.1",

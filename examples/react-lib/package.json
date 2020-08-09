@@ -25,7 +25,7 @@
     "@matejbransky/react-test-utils": "^1.0.0-alpha.4",
     "@matejbransky/typescript-config": "1.0.0-alpha.1",
     "@types/react": "^16.9.44",
-    "eslint": "^7.6.0",
+    "eslint": "6.x",
     "jest": "^26.2.2",
     "microbundle": "^0.12.3",
     "prettier": "^2.0.5",
