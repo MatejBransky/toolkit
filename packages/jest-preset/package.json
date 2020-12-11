@@ -1,6 +1,6 @@
 {
   "name": "@matejbransky/jest-preset",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "author": "Matej Bransky",
   "main": "jest-preset.js",
   "license": "MIT",
