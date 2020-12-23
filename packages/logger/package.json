@@ -4,6 +4,7 @@
   "source": "src/index.ts",
   "main": "dist/logger.js",
   "module": "dist/logger.module.js",
+  "types": "dist/index.d.ts",
   "author": "Matej Bransky",
   "license": "MIT",
   "publishConfig": {
