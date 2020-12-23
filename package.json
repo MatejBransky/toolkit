@@ -12,6 +12,7 @@
   "scripts": {
     "build": "lerna run build --no-private",
     "release": "lerna publish",
+    "prerelease": "lerna run build --no-private",
     "format": "lerna run format --parallel",
     "lint": "lerna run lint --parallel",
     "types": "lerna run types --parallel"
