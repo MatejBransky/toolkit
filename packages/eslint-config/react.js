@@ -10,4 +10,5 @@ module.exports = {
       version: 'latest',
     },
   },
+  ignorePatterns: 'dist',
 };
