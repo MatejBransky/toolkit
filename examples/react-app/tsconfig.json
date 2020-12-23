@@ -1,5 +1,5 @@
 {
-	"extends": "@matejbransky/typescript-config",
-	"exclude": ["./tests-cypress"],
-	"include": ["./assets.d.ts", "./src/**/*.ts", "./src/**/*.tsx"]
+  "extends": "@matejbransky/typescript-config",
+  "exclude": ["./tests-cypress"],
+  "include": ["./assets.d.ts", "./src/**/*.ts", "./src/**/*.tsx"]
 }
