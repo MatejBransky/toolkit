@@ -4,12 +4,17 @@
   "author": "Matej Bransky",
   "main": "react.js",
   "license": "MIT",
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint ."
+  },
   "peerDependencies": {
     "eslint": ">=6",
     "prettier": ">=2",
     "typescript": ">=3"
   },
   "devDependencies": {
+    "@matejbransky/prettier-config": "^1.0.0-alpha.2",
     "eslint": "^7.15.0",
     "prettier": "^2.2.1",
     "typescript": "^4.1.2"
@@ -26,5 +31,9 @@
     "eslint-plugin-prettier": "^3.2.0",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0"
-  }
+  },
+  "eslintConfig": {
+    "extends": "./react.js"
+  },
+  "prettier": "@matejbransky/prettier-config"
 }
