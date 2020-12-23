@@ -1,6 +1,6 @@
 {
   "name": "@matejbransky/react-test-utils",
-  "version": "1.0.0-alpha.7",
+  "version": "1.0.0-alpha.8",
   "license": "MIT",
   "author": "Matej Bransky",
   "src": "index.ts",
