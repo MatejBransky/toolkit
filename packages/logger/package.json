@@ -6,6 +6,9 @@
   "module": "dist/logger.module.js",
   "author": "Matej Bransky",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "microbundle watch --no-compress",
     "build": "rimraf dist && microbundle",
