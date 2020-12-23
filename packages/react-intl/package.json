@@ -18,10 +18,16 @@
     "lint": "eslint ./src",
     "types": "tsc --noEmit"
   },
+  "dependencies": {
+    "@eo-locale/core": "^1.4.11",
+    "@eo-locale/react": "^1.4.11",
+    "@matejbransky/logger": "^1.0.0-alpha.1"
+  },
   "devDependencies": {
     "@matejbransky/eslint-config": "^1.0.0-alpha.4",
     "@matejbransky/jest-preset": "^1.0.0-alpha.3",
     "@matejbransky/prettier-config": "^1.0.0-alpha.2",
+    "@matejbransky/react-test-utils": "^1.0.0-alpha.7",
     "@matejbransky/typescript-config": "^1.0.0-alpha.2",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
@@ -38,10 +44,8 @@
     "extends": "@matejbransky/eslint-config"
   },
   "jest": {
-    "preset": "@matejbransky/jest-preset"
+    "preset": "@matejbransky/jest-preset",
+    "testEnvironment": "jsdom"
   },
-  "prettier": "@matejbransky/prettier-config",
-  "dependencies": {
-    "@matejbransky/react-test-utils": "^1.0.0-alpha.7"
-  }
+  "prettier": "@matejbransky/prettier-config"
 }
