@@ -3,11 +3,16 @@
   "version": "1.0.0-alpha.7",
   "license": "MIT",
   "author": "Matej Bransky",
-  "main": "index.ts",
+  "src": "index.ts",
+  "main": "dist/react-test-utils.js",
+  "module": "dist/react-test-utils.module.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "dev": "microbundle watch --no-compress",
+    "build": "rimraf dist && microbundle",
     "test": "jest",
     "format": "prettier --write .",
-    "lint": "eslint .",
+    "lint": "eslint ./src",
     "types": "tsc -p tsconfig.json --noEmit"
   },
   "peerDependencies": {
@@ -28,9 +33,11 @@
     "@types/react-dom": "^16.9.8",
     "eslint": "^7.2.0",
     "jest": "^26.0.1",
+    "microbundle": "^0.13.0",
     "prettier": "^2.0.5",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "rimraf": "^3.0.2",
     "typescript": "^3.9.5"
   },
   "jest": {

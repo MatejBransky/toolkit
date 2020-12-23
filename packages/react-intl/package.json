@@ -1,9 +1,9 @@
 {
-  "name": "@matejbransky/logger",
-  "version": "1.0.0-alpha.1",
+  "name": "@matejbransky/react-intl",
+  "version": "1.0.0-alpha.0",
   "source": "src/index.ts",
-  "main": "dist/logger.js",
-  "module": "dist/logger.module.js",
+  "main": "dist/react-intl.js",
+  "module": "dist/react-intl.module.js",
   "types": "dist/index.d.ts",
   "author": "Matej Bransky",
   "license": "MIT",
@@ -12,21 +12,31 @@
   },
   "scripts": {
     "dev": "microbundle watch --no-compress",
-    "build": "rimraf dist && microbundle",
+    "build": "rimraf dist && microbundle --no-compress",
     "test": "jest",
     "format": "prettier --write ./src",
     "lint": "eslint ./src",
     "types": "tsc --noEmit"
   },
+  "dependencies": {
+    "@eo-locale/core": "^1.4.11",
+    "@eo-locale/react": "^1.4.11",
+    "@matejbransky/logger": "^1.0.0-alpha.1"
+  },
   "devDependencies": {
     "@matejbransky/eslint-config": "^1.0.0-alpha.4",
     "@matejbransky/jest-preset": "^1.0.0-alpha.3",
     "@matejbransky/prettier-config": "^1.0.0-alpha.2",
+    "@matejbransky/react-test-utils": "^1.0.0-alpha.7",
     "@matejbransky/typescript-config": "^1.0.0-alpha.2",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
     "eslint": "^7.16.0",
     "jest": "^26.6.3",
     "microbundle": "^0.13.0",
     "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "rimraf": "^3.0.2",
     "typescript": "^4.1.3"
   },
@@ -34,7 +44,8 @@
     "extends": "@matejbransky/eslint-config"
   },
   "jest": {
-    "preset": "@matejbransky/jest-preset"
+    "preset": "@matejbransky/jest-preset",
+    "testEnvironment": "jsdom"
   },
   "prettier": "@matejbransky/prettier-config"
 }
