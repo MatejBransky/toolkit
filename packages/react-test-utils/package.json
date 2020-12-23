@@ -6,8 +6,8 @@
   "main": "index.ts",
   "scripts": {
     "test": "jest",
-    "format": "prettier --write --ignore-path .gitignore .",
-    "lint": "eslint --ignore-path .gitignore .",
+    "format": "prettier --write .",
+    "lint": "eslint .",
     "types": "tsc -p tsconfig.json --noEmit"
   },
   "peerDependencies": {
