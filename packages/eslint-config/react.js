@@ -10,5 +10,8 @@ module.exports = {
       version: 'latest',
     },
   },
+  rules: {
+    'prettier/prettier': 'warn',
+  },
   ignorePatterns: 'dist',
 };
