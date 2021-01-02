@@ -1,6 +1,6 @@
 {
   "name": "@matejbransky/logger",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0-alpha.5",
   "source": "src/index.ts",
   "main": "dist/logger.js",
   "module": "dist/logger.module.js",
@@ -19,7 +19,7 @@
     "types": "tsc --noEmit"
   },
   "devDependencies": {
-    "@matejbransky/eslint-config": "^1.0.0-alpha.6",
+    "@matejbransky/eslint-config": "^1.0.0-alpha.7",
     "@matejbransky/jest-preset": "^1.0.0-alpha.3",
     "@matejbransky/prettier-config": "^1.0.0-alpha.2",
     "@matejbransky/typescript-config": "^1.0.0-alpha.2",
