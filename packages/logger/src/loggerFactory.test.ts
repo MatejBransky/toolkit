@@ -1,6 +1,5 @@
-import { Log } from './types';
 import { LogLevel, LogMethod } from './constants';
-import loggerFactory, { defaultPrefixer } from './loggerFactory';
+import loggerFactory, { defaultPrefixer, Log } from './loggerFactory';
 
 describe('logger', () => {
   let consoleSpy = {} as Record<LogMethod, jest.SpyInstance>;
