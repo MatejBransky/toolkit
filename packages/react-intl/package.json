@@ -1,7 +1,7 @@
 {
   "name": "@matejbransky/react-intl",
   "version": "1.0.0-alpha.5",
-  "source": "src/index.ts",
+  "source": "src/index.tsx",
   "main": "dist/react-intl.js",
   "module": "dist/react-intl.module.js",
   "types": "dist/index.d.ts",
@@ -12,7 +12,7 @@
   },
   "scripts": {
     "dev": "microbundle watch --no-compress",
-    "build": "rimraf dist && microbundle --no-compress",
+    "build": "rimraf dist && microbundle --no-compress -f es,cjs",
     "test": "jest",
     "format": "prettier --write ./src",
     "lint": "eslint ./src",
