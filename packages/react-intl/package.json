@@ -1,6 +1,6 @@
 {
   "name": "@matejbransky/react-intl",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "source": "src/index.ts",
   "main": "dist/react-intl.js",
   "module": "dist/react-intl.module.js",
@@ -21,13 +21,13 @@
   "dependencies": {
     "@eo-locale/core": "^1.4.11",
     "@eo-locale/react": "^1.4.11",
-    "@matejbransky/logger": "^1.0.0-alpha.3"
+    "@matejbransky/logger": "^1.0.0-alpha.4"
   },
   "devDependencies": {
-    "@matejbransky/eslint-config": "^1.0.0-alpha.5",
+    "@matejbransky/eslint-config": "^1.0.0-alpha.6",
     "@matejbransky/jest-preset": "^1.0.0-alpha.3",
     "@matejbransky/prettier-config": "^1.0.0-alpha.2",
-    "@matejbransky/react-test-utils": "^1.0.0-alpha.9",
+    "@matejbransky/react-test-utils": "^1.0.0-alpha.10",
     "@matejbransky/typescript-config": "^1.0.0-alpha.2",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
