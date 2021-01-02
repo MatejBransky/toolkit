@@ -12,7 +12,7 @@
   },
   "scripts": {
     "dev": "microbundle watch --no-compress",
-    "build": "rimraf dist && microbundle --no-compress -f es,cjs --external react,react-dom",
+    "build": "rimraf dist && microbundle --no-compress -f es,cjs --external react,react-dom --jsx React.createElement",
     "test": "jest",
     "format": "prettier --write ./src",
     "lint": "eslint ./src",
