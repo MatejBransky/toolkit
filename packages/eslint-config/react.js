@@ -11,6 +11,8 @@ module.exports = {
     },
   },
   rules: {
+    '@typescript-eslint/no-redeclare': 'off',
+    '@typescript-eslint/no-use-before-define': 'off',
     'prettier/prettier': 'warn',
   },
   ignorePatterns: 'dist',
