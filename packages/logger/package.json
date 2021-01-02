@@ -1,6 +1,6 @@
 {
   "name": "@matejbransky/logger",
-  "version": "1.0.0-alpha.6",
+  "version": "1.0.0-alpha.7",
   "source": "src/index.ts",
   "main": "dist/logger.js",
   "module": "dist/logger.module.js",
@@ -22,7 +22,7 @@
     "@matejbransky/eslint-config": "^1.0.0-alpha.8",
     "@matejbransky/jest-preset": "^1.0.0-alpha.3",
     "@matejbransky/prettier-config": "^1.0.0-alpha.2",
-    "@matejbransky/typescript-config": "^1.0.0-alpha.2",
+    "@matejbransky/typescript-config": "^1.0.0-alpha.3",
     "eslint": "^7.16.0",
     "jest": "^26.6.3",
     "microbundle": "^0.13.0",
