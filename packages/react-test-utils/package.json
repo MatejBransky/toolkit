@@ -9,7 +9,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "dev": "microbundle watch --no-compress",
-    "build": "rimraf dist && microbundle",
+    "build": "rimraf dist && microbundle --no-compress --external react,react-dom",
     "test": "jest",
     "format": "prettier --write .",
     "lint": "eslint ./src",
