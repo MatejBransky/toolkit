@@ -1,6 +1,6 @@
 {
   "name": "@matejbransky/react-intl",
-  "version": "1.0.0-alpha.9",
+  "version": "1.0.0-alpha.10",
   "source": "src/index.tsx",
   "main": "dist/react-intl.js",
   "module": "dist/react-intl.module.js",
