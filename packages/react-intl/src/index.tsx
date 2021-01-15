@@ -8,9 +8,9 @@ import { useRequest, Status } from './useRequest';
 const log = loggerFactory.getLogger('@matejbransky/react-intl');
 
 export const IntlProvider: React.FC<IntlProps> = (props) => {
-  const path = props.path ?? '/locales';
+  const folderPath = props.path ?? '/locales';
   const request = useRequest<Locale[]>(
-    `${path}/${props.locale}.json`,
+    `${folderPath}/${props.locale}.json`,
     (path: string) => {
       if (props.messages) {
         log.debug('messages are loaded from the "props.messages"');
@@ -19,12 +19,36 @@ export const IntlProvider: React.FC<IntlProps> = (props) => {
         ]);
       }
 
-      return fetch(path)
-        .then((response) => response.json())
-        .then<Locale[]>((response) => {
-          log.debug({ messages: response });
-          return [{ language: props.locale, messages: response }];
-        });
+      return fetchMessages(path).catch(() => {
+        log.info(
+          `Falling back to the fallbackLocale "${props.fallbackLocale}"...`
+        );
+        const fallbackPath = `${folderPath}/${props.fallbackLocale}.json`;
+        return fetchMessages(fallbackPath);
+      });
+
+      async function fetchMessages(messagesPath: string) {
+        return fetch(messagesPath)
+          .then((response) => {
+            if (response.ok) {
+              return response.json();
+            }
+            return response.json().then(Promise.reject);
+          })
+          .then<Locale[]>(
+            (response) => {
+              log.debug({ messages: response });
+              return [{ language: props.locale, messages: response }];
+            },
+            (error) => {
+              log.error(
+                `Error during the request of the locale "${props.locale}" at the path: "${messagesPath}". Error:`,
+                error.message
+              );
+              throw new Error(error);
+            }
+          );
+      }
     }
   );
 
@@ -40,6 +64,7 @@ export const IntlProvider: React.FC<IntlProps> = (props) => {
 };
 
 type IntlProps = {
+  fallbackLocale: string;
   locale: string;
   path?: string;
   messages?: Record<string, string>;
