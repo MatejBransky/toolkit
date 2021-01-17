@@ -58,7 +58,7 @@ function getPackages(rootPath) {
         return null;
       }
     })
-    .filter((pkg) => pkg.source);
+    .filter((pkg) => pkg && pkg.source);
 
   return packages;
 }
