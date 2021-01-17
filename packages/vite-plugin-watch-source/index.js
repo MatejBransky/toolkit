@@ -3,7 +3,7 @@ const fs = require('fs');
 
 module.exports = function watchWorkspaces(rootPath) {
   return {
-    name: '@packages/vite-plugin-watch-source',
+    name: '@matejbransky/vite-plugin-watch-source',
 
     config: (userConfig) => {
       const modifiedConfig = {
@@ -51,7 +51,13 @@ function getPackages(rootPath) {
   );
 
   const packages = folderPaths
-    .map((folderPath) => require(path.resolve(folderPath, 'package.json')))
+    .map((folderPath) => {
+      try {
+        return require(path.resolve(folderPath, 'package.json'));
+      } catch (e) {
+        return null;
+      }
+    })
     .filter((pkg) => pkg.source);
 
   return packages;
