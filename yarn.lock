@@ -4760,6 +4760,11 @@ esbuild@^0.8.12:
   resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.8.26.tgz#a85491617ebd2bd35ca4bf479239487eb6819d71"
   integrity sha512-u3MMHOOumdWoAKF+073GHPpzvVB2cM+y9VD4ZwYs1FAQ6atRPISya35dbrbOu/mM68mQ42P+nwPzQVBTfQhkvQ==
 
+esbuild@^0.8.26:
+  version "0.8.32"
+  resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.8.32.tgz#d3d679ea417925f7afaab37555e52070df317355"
+  integrity sha512-5IzQapMW/wFy5oxziHCJzawk26K3xeyrIAQPnPN3c0Q84hqRw6IfGDGfGWOdJNw5tAx77yvwqZ4r1QMpo6emJA==
+
 escalade@^3.1.1:
   version "3.1.1"
   resolved "https://registry.npmjs.org/escalade/-/escalade-3.1.1.tgz#d8cfdc7000965c5a0174b4a82eaa5c0552742e40"
@@ -11452,6 +11457,18 @@ vite-plugin-react@^4.0.1:
     "@babel/core" "^7.9.6"
     "@babel/plugin-syntax-import-meta" "^7.10.4"
     react-refresh "^0.8.2"
+
+vite@2.0.0-beta.30:
+  version "2.0.0-beta.30"
+  resolved "https://registry.npmjs.org/vite/-/vite-2.0.0-beta.30.tgz#d0c1056d1fb05c489614360f92363eebec41a6b4"
+  integrity sha512-wOeO64J3k4jGjCOkH/6RUcIyT/HOTaDZSiXE75aWYqV9hI7Q6uEeSXbAFtb9bG82RGLEWdsqtCvx5t7gaeqtsw==
+  dependencies:
+    esbuild "^0.8.26"
+    postcss "^8.2.1"
+    resolve "^1.19.0"
+    rollup "^2.35.1"
+  optionalDependencies:
+    fsevents "~2.1.2"
 
 vite@^1.0.0-rc.13:
   version "1.0.0-rc.13"
