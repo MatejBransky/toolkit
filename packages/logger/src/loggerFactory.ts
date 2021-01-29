@@ -33,7 +33,7 @@ export default (function loggerFactory(): LoggerFactory {
   };
 
   function createLogger(name: string) {
-    const proxifiedLogger = new Proxy(window.console, {
+    const proxifiedLogger = new Proxy(globalThis.console, {
       get(target, propKey: LogMethod | string, receiver) {
         if (propKey === 'setLevel') {
           return (newLevel: keyof typeof LogLevel) => {
